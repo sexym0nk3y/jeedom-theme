@@ -1,99 +1,52 @@
-body[data-page='dashboard'] {
+:root {
+  --cat-energy-color: transparent;
+  --cat-multimedia-color: transparent;
+  --cat-security-color: transparent;
+  --cat-light-color: transparent;
+  --cat-heating-color: transparent;
+  --cat-automatism-color: transparent;
+  --cat-other-color: transparent;
+  --txt-color: #fff;
+  --el-defaultColor: rgba(0, 0, 0, 0.26);
+  --link-color: rgb(255, 255, 255);
+  --btnEq-default-color: rgba(0, 0, 0, 0.26);
+  --placeholder-color: rgba(255, 255, 255, 0.55);
+  --form-bg-color: rgba(0, 0, 0, .26);
+}
+
+body[data-page=dashboard] {
   background: #f7caa6;
-  background: linear-gradient(118deg, #f7caa6 0%, #c99 40%, rebeccapurple 100%);
+  background: linear-gradient(118deg, #f7caa6 0%, #cc9999 40%, rebeccapurple 100%);
 }
-
-body[data-page='dashboard'] #div_displayObject .eqLogic:not(.col-xs-12),
-body[data-page='dashboard'] .eqLogic-widget {
-  color: #fff !important;
-  background: #465efb;
-  background: linear-gradient(138deg, rgba(194, 255, 216, .497637) 0%, rgba(70, 94, 251, .494835) 100%);
+body[data-page=dashboard] .widget-name {
+  margin-top: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-
-body[data-page='dashboard'] div.cmd-widget .title,
-body[data-page='dashboard'] .highcharts-data-label > span > span,
-body[data-page='dashboard'] div.cmd-widget .content-xs,
-body[data-page='dashboard'] .cmdStats,
-body[data-page='dashboard'] div.cmd > div.center-block,
-body[data-page='dashboard'] :not(.tableCmdcss) .cmd:not(.label) .state,
-body[data-page='dashboard'] .cmd,
-body[data-page='dashboard'] div.cmd-widget select option,
-body[data-page='dashboard'] .eqLogic.eqLogic-widget .btn,
-body[data-page='dashboard'] .scenario.scenario-widget .btn,
-body[data-page='dashboard'] #div_displayObject .btn,
-body[data-page='dashboard'] .form-control:not(.btn):not(.expressionAttr),
-body[data-page='dashboard'] input:not(.btn):not(.dial):not([type=radio]):not([type=image]):not(.expressionAttr):not(.knob):not([type=checkbox]):not(#in_login_username):not(#in_login_password) {
-  color: #fff !important;
-}
-
-body[data-page='dashboard'] textarea:not(.expressionAttr),
-body[data-page='dashboard'] input {
-  color: #fff !important;
-}
-
-body[data-page='dashboard'] textarea:not(.expressionAttr)::-moz-placeholder, body[data-page='dashboard'] input::-moz-placeholder {
-  color: rgba(255, 255, 255, .55) !important;
-}
-
-body[data-page='dashboard'] textarea:not(.expressionAttr):-ms-input-placeholder, body[data-page='dashboard'] input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, .55) !important;
-}
-
-body[data-page='dashboard'] textarea:not(.expressionAttr)::placeholder,
-body[data-page='dashboard'] input::placeholder {
-  color: rgba(255, 255, 255, .55) !important;
-}
-
-body[data-page='dashboard'] .highcharts-color-0 {
-  fill: #fff;
-}
-
-body[data-page='dashboard'] .gauge .highcharts-pane {
-  fill: rgba(0, 0, 0, .26) !important;
-}
-
-body[data-page='dashboard'] .eqLogic.eqLogic-widget .btn,
-body[data-page='dashboard'] .scenario.scenario-widget .btn,
-body[data-page='dashboard'] #div_displayObject .btn,
-body[data-page='dashboard'] .form-control:not(.btn):not(.expressionAttr),
-body[data-page='dashboard'] input:not(.btn):not(.dial):not([type=radio]):not([type=image]):not(.expressionAttr):not(.knob):not([type=checkbox]),
-body[data-page='dashboard'] textarea:not(.expressionAttr),
-body[data-page='dashboard'] .ui-slider {
-  background-color: rgba(0, 0, 0, .26) !important;
-}
-
-body[data-page='dashboard'] .eqLogic-widget.security {
-  background: #ff9d6c !important;
-  background: linear-gradient(114deg, rgba(240, 95, 87, .522847) 0%, rgba(54, 9, 64, .469625) 100%) !important;
-}
-
-body[data-page='dashboard'] .eqLogic-widget.heating {
-  background: #f0ff00 !important;
-  background: linear-gradient(114deg, rgba(240, 255, 0, .494835) 0%, rgba(88, 207, 251, .452819) 100%) !important;
-}
-
-body[data-page='dashboard'] .eqLogic-widget.multimedia {
-  background: #69e1ea !important;
-  background: linear-gradient(114deg, rgba(105, 225, 234, .489233) 0%, rgba(26, 66, 71, .478029) 100%) !important;
-}
-
-body[data-page='dashboard'] .eqLogic-widget.energy {
-  background: #22c1c3 !important;
-  background: linear-gradient(138deg, rgba(34, 193, 195, .494835) 0%, rgba(251, 215, 134, .525648) 48%, rgba(247, 121, 125, .517244) 100%) !important;
-}
-
-body[data-page='dashboard'] .eqLogic-widget > .widget-name a,
-body[data-page='dashboard'] .scenario-widget > .widget-name a,
-body[data-page='dashboard'] .eqLogic-widget > span:first-child.statusCmd i,
-body[data-page='dashboard'] .eqLogic.eqLogic-widget .widget-name,
-body[data-page='dashboard'] .scenario-widget .widget-name {
+body[data-page=dashboard] .eqLogic-widget > .widget-name a,
+body[data-page=dashboard] .scenario-widget > .widget-name a,
+body[data-page=dashboard] .eqLogic-widget > span:first-child.statusCmd i,
+body[data-page=dashboard] .eqLogic.eqLogic-widget .widget-name,
+body[data-page=dashboard] .scenario-widget .widget-name {
   font-size: 13px !important;
 }
-
-body[data-page='dashboard'] .eqLogic.eqLogic-widget .widget-name,
-body[data-page='dashboard'] .scenario-widget .widget-name {
-  font-weight: 600;
-  margin-top: 6px;
-  text-transform: uppercase;
-  background: transparent !important;
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12), body[data-page=dashboard] .eqLogic-widget {
+  background: #465efb;
+  background: linear-gradient(138deg, rgba(194, 255, 216, 0.4976365546) 0%, rgba(70, 94, 251, 0.4948354342) 100%);
+}
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).security, body[data-page=dashboard] .eqLogic-widget.security {
+  background: #ff9d6c !important;
+  background: linear-gradient(114deg, rgba(240, 95, 87, 0.5228466387) 0%, rgba(54, 9, 64, 0.4696253501) 100%) !important;
+}
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).heating, body[data-page=dashboard] .eqLogic-widget.heating {
+  background: #f0ff00 !important;
+  background: linear-gradient(114deg, rgba(240, 255, 0, 0.4948354342) 0%, rgba(88, 207, 251, 0.4528186275) 100%) !important;
+}
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).multimedia, body[data-page=dashboard] .eqLogic-widget.multimedia {
+  background: #69e1ea !important;
+  background: linear-gradient(114deg, rgba(105, 225, 234, 0.4892331933) 0%, rgba(26, 66, 71, 0.4780287115) 100%) !important;
+}
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).energy, body[data-page=dashboard] .eqLogic-widget.energy {
+  background: #22c1c3 !important;
+  background: linear-gradient(138deg, rgba(34, 193, 195, 0.4948354342) 0%, rgba(251, 215, 134, 0.5256477591) 48%, rgba(247, 121, 125, 0.5172443978) 100%) !important;
 }
