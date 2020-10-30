@@ -1,0 +1,62 @@
+:root {
+  --cat-energy-color: transparent;
+  --cat-multimedia-color: transparent;
+  --cat-security-color: transparent;
+  --cat-light-color: transparent;
+  --cat-heating-color: transparent;
+  --cat-automatism-color: transparent;
+  --cat-heating-color: transparent;
+  --cat-other-color: transparent;
+  --txt-color: #fff;
+  --el-defaultColor: rgba(0, 0, 0, 0.26);
+  --link-color: rgb(255, 255, 255);
+  --btnEq-default-color: rgba(0, 0, 0, 0.26);
+  --placeholder-color: rgba(255, 255, 255, 0.55);
+  --form-bg-color: rgba(0, 0, 0, .26);
+}
+
+body[data-page='dashboard']{
+
+  background: rgb(247,202,166);
+  background: linear-gradient(118deg, rgba(247,202,166,1) 0%, rgba(204,153,153,1) 40%, rgba(102,51,153,1) 100%);
+
+  .widget-name{
+    margin-top: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .eqLogic-widget > .widget-name a,
+  .scenario-widget > .widget-name a,
+  .eqLogic-widget > span:first-child.statusCmd i,
+  .eqLogic.eqLogic-widget .widget-name,
+  .scenario-widget .widget-name
+  {
+    font-size: 13px !important;
+  }
+
+  #div_displayObject .eqLogic:not(.col-xs-12), .eqLogic-widget{
+    background: rgb(70,94,251);
+    background: linear-gradient(138deg, rgba(194,255,216,0.49763655462184875) 0%, rgba(70,94,251,0.4948354341736695) 100%);
+    &.security{
+      background: rgb(255,157,108) !important;
+      background: linear-gradient(114deg, rgba(240,95,87,0.5228466386554622) 0%, rgba(54,9,64,0.469625350140056) 100%) !important;
+    }
+
+    &.heating{
+      background: rgb(240,255,0) !important;
+      background: linear-gradient(114deg, rgba(240,255,0,0.4948354341736695) 0%, rgba(88,207,251,0.45281862745098034) 100%) !important;
+    }
+
+    &.multimedia{
+      background: rgb(105,225,234) !important;
+      background: linear-gradient(114deg, rgba(105,225,234,0.48923319327731096) 0%, rgba(26,66,71,0.4780287114845938) 100%) !important;
+    }
+
+    &.energy{
+      background: rgb(34,193,195) !important;
+      background: linear-gradient(138deg, rgba(34,193,195,0.4948354341736695) 0%, rgba(251,215,134,0.5256477591036415) 48%, rgba(247,121,125,0.5172443977591037) 100%) !important;
+    }
+  }
+
+}
