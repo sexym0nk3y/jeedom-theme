@@ -34,6 +34,10 @@ body[data-page='dashboard']{
     font-size: 13px !important;
   }
 
+  .cmdStats span{
+    margin: 2px;
+  }
+
   #div_displayObject .eqLogic:not(.col-xs-12), .eqLogic-widget{
     background: rgb(70,94,251);
     background: linear-gradient(138deg, rgba(194,255,216,0.49763655462184875) 0%, rgba(70,94,251,0.4948354341736695) 100%);

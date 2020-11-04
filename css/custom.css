@@ -30,6 +30,9 @@ body[data-page=dashboard] .eqLogic.eqLogic-widget .widget-name,
 body[data-page=dashboard] .scenario-widget .widget-name {
   font-size: 13px !important;
 }
+body[data-page=dashboard] .cmdStats span {
+  margin: 2px;
+}
 body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12), body[data-page=dashboard] .eqLogic-widget {
   background: #465efb;
   background: linear-gradient(138deg, rgba(194, 255, 216, 0.4976365546) 0%, rgba(70, 94, 251, 0.4948354342) 100%);
