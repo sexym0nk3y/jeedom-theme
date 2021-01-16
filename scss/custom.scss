@@ -1,24 +1,83 @@
-:root {
-  --cat-energy-color: transparent;
-  --cat-multimedia-color: transparent;
-  --cat-security-color: transparent;
-  --cat-light-color: transparent;
-  --cat-heating-color: transparent;
-  --cat-automatism-color: transparent;
-  --cat-other-color: transparent;
-  --txt-color: #fff;
-  --eqTitle-color: #fff;
-  --el-defaultColor: rgba(0, 0, 0, 0.26);
-  --link-color: rgb(255, 255, 255);
-  --btnEq-default-color: rgba(0, 0, 0, 0.26);
-  --placeholder-color: rgba(255, 255, 255, 0.55);
-  --form-bg-color: rgba(0, 0, 0, .26);
-}
+@import "base/_colors.scss";
 
 body[data-page='dashboard']{
 
   background: rgb(247,202,166);
   background: linear-gradient(118deg, rgba(247,202,166,1) 0%, rgba(204,153,153,1) 40%, rgba(102,51,153,1) 100%);
+
+  .navbar{
+    border-bottom: none !important;
+    background-color: $navbar-bg-color !important;
+    outline: none !important;
+    &-header, &-collapse, .container-fluid, &-nav, &-nav .dropdown-toggle{
+      background-color: transparent !important;
+    }
+    &-nav{
+      background-color: transparent !important;
+      >li>a{
+        &:focus, &:hover{
+          background-color: transparent !important;
+        }
+      }
+      .cursor ul {
+        background-color: $navbar-bg-color !important;
+      }
+      .dropdown{
+        border: none !important;
+        &-menu{
+          background-color: $navbar-bg-color !important;
+        }
+      }
+    }
+
+    .objectSummaryglobal{
+      top: 3px;
+      .objectSummaryParent{
+        &[data-summary='motion']
+        {
+          & sup , i {
+            color: #e53935 !important;
+          }
+        }
+
+        &[data-summary='humidity']
+        {
+          & sup , i {
+            color: #00B4DB !important;
+          }
+        }
+
+        &[data-summary='pression']
+        {
+          & sup , i {
+            color: #78909C !important;
+          }
+        }
+
+        &[data-summary='temperature']
+        {
+          & sup , i {
+            color: #fd7950 !important;
+          }
+        }
+
+        &[data-summary='light']
+        {
+          & sup , i {
+            color: #FBC02D !important;
+          }
+        }
+
+        &[data-summary='outlet']
+        {
+          & sup , i {
+            color: #989292 !important;
+          }
+        }
+
+      }
+    }
+  }
 
   .widget-name{
     margin-top: 6px;
@@ -33,34 +92,43 @@ body[data-page='dashboard']{
   .scenario-widget .widget-name
   {
     font-size: 13px !important;
+    font-weight: 500;
   }
 
   .cmdStats span{
     margin: 2px;
   }
 
-  #div_displayObject .eqLogic:not(.col-xs-12), .eqLogic-widget{
-    background: rgb(70,94,251);
-    background: linear-gradient(138deg, rgba(194,255,216,0.49763655462184875) 0%, rgba(70,94,251,0.4948354341736695) 100%);
-    &.security{
-      background: rgb(255,157,108) !important;
-      background: linear-gradient(114deg, rgba(240,95,87,0.5228466386554622) 0%, rgba(54,9,64,0.469625350140056) 100%) !important;
+  #div_displayObject
+  {
+    .div_object .objectDashLegend{
+      background-color: transparent !important;
     }
 
-    &.heating{
-      background: rgb(240,255,0) !important;
-      background: linear-gradient(114deg, rgba(240,255,0,0.4948354341736695) 0%, rgba(88,207,251,0.45281862745098034) 100%) !important;
+    .eqLogic:not(.col-xs-12), .eqLogic-widget{
+      background: rgb(70,94,251);
+      background: linear-gradient(138deg, rgba(194,255,216,0.49763655462184875) 0%, rgba(70,94,251,0.4948354341736695) 100%);
+      &.security{
+        background: rgb(255,157,108) !important;
+        background: linear-gradient(114deg, rgba(240,95,87,0.5228466386554622) 0%, rgba(54,9,64,0.469625350140056) 100%) !important;
+      }
+
+      &.heating{
+        background: rgb(240,255,0) !important;
+        background: linear-gradient(114deg, rgba(240,255,0,0.4948354341736695) 0%, rgba(88,207,251,0.45281862745098034) 100%) !important;
+      }
+
+      &.multimedia{
+        background: rgb(105,225,234) !important;
+        background: linear-gradient(114deg, rgba(105,225,234,0.48923319327731096) 0%, rgba(26,66,71,0.4780287114845938) 100%) !important;
+      }
+
+      &.energy{
+        background: rgb(34,193,195) !important;
+        background: linear-gradient(138deg, rgba(34,193,195,0.4948354341736695) 0%, rgba(251,215,134,0.5256477591036415) 48%, rgba(247,121,125,0.5172443977591037) 100%) !important;
+      }
     }
 
-    &.multimedia{
-      background: rgb(105,225,234) !important;
-      background: linear-gradient(114deg, rgba(105,225,234,0.48923319327731096) 0%, rgba(26,66,71,0.4780287114845938) 100%) !important;
-    }
-
-    &.energy{
-      background: rgb(34,193,195) !important;
-      background: linear-gradient(138deg, rgba(34,193,195,0.4948354341736695) 0%, rgba(251,215,134,0.5256477591036415) 48%, rgba(247,121,125,0.5172443977591037) 100%) !important;
-    }
   }
 
 }

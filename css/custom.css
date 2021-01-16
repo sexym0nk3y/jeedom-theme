@@ -13,11 +13,56 @@
   --btnEq-default-color: rgba(0, 0, 0, 0.26);
   --placeholder-color: rgba(255, 255, 255, 0.55);
   --form-bg-color: rgba(0, 0, 0, .26);
+  --al-success-color: rgb(154 232 62);
 }
 
 body[data-page=dashboard] {
   background: #f7caa6;
   background: linear-gradient(118deg, #f7caa6 0%, #cc9999 40%, rebeccapurple 100%);
+}
+body[data-page=dashboard] .navbar {
+  border-bottom: none !important;
+  background-color: rgba(20, 20, 20, 0.8) !important;
+  outline: none !important;
+}
+body[data-page=dashboard] .navbar-header, body[data-page=dashboard] .navbar-collapse, body[data-page=dashboard] .navbar .container-fluid, body[data-page=dashboard] .navbar-nav, body[data-page=dashboard] .navbar-nav .dropdown-toggle {
+  background-color: transparent !important;
+}
+body[data-page=dashboard] .navbar-nav {
+  background-color: transparent !important;
+}
+body[data-page=dashboard] .navbar-nav > li > a:focus, body[data-page=dashboard] .navbar-nav > li > a:hover {
+  background-color: transparent !important;
+}
+body[data-page=dashboard] .navbar-nav .cursor ul {
+  background-color: rgba(20, 20, 20, 0.8) !important;
+}
+body[data-page=dashboard] .navbar-nav .dropdown {
+  border: none !important;
+}
+body[data-page=dashboard] .navbar-nav .dropdown-menu {
+  background-color: rgba(20, 20, 20, 0.8) !important;
+}
+body[data-page=dashboard] .navbar .objectSummaryglobal {
+  top: 3px;
+}
+body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=motion] sup, body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=motion] i {
+  color: #e53935 !important;
+}
+body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=humidity] sup, body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=humidity] i {
+  color: #00B4DB !important;
+}
+body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=pression] sup, body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=pression] i {
+  color: #78909C !important;
+}
+body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=temperature] sup, body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=temperature] i {
+  color: #fd7950 !important;
+}
+body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=light] sup, body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=light] i {
+  color: #FBC02D !important;
+}
+body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=outlet] sup, body[data-page=dashboard] .navbar .objectSummaryglobal .objectSummaryParent[data-summary=outlet] i {
+  color: #989292 !important;
 }
 body[data-page=dashboard] .widget-name {
   margin-top: 6px;
@@ -30,27 +75,31 @@ body[data-page=dashboard] .eqLogic-widget > span:first-child.statusCmd i,
 body[data-page=dashboard] .eqLogic.eqLogic-widget .widget-name,
 body[data-page=dashboard] .scenario-widget .widget-name {
   font-size: 13px !important;
+  font-weight: 500;
 }
 body[data-page=dashboard] .cmdStats span {
   margin: 2px;
 }
-body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12), body[data-page=dashboard] .eqLogic-widget {
+body[data-page=dashboard] #div_displayObject .div_object .objectDashLegend {
+  background-color: transparent !important;
+}
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12), body[data-page=dashboard] #div_displayObject .eqLogic-widget {
   background: #465efb;
   background: linear-gradient(138deg, rgba(194, 255, 216, 0.4976365546) 0%, rgba(70, 94, 251, 0.4948354342) 100%);
 }
-body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).security, body[data-page=dashboard] .eqLogic-widget.security {
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).security, body[data-page=dashboard] #div_displayObject .eqLogic-widget.security {
   background: #ff9d6c !important;
   background: linear-gradient(114deg, rgba(240, 95, 87, 0.5228466387) 0%, rgba(54, 9, 64, 0.4696253501) 100%) !important;
 }
-body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).heating, body[data-page=dashboard] .eqLogic-widget.heating {
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).heating, body[data-page=dashboard] #div_displayObject .eqLogic-widget.heating {
   background: #f0ff00 !important;
   background: linear-gradient(114deg, rgba(240, 255, 0, 0.4948354342) 0%, rgba(88, 207, 251, 0.4528186275) 100%) !important;
 }
-body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).multimedia, body[data-page=dashboard] .eqLogic-widget.multimedia {
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).multimedia, body[data-page=dashboard] #div_displayObject .eqLogic-widget.multimedia {
   background: #69e1ea !important;
   background: linear-gradient(114deg, rgba(105, 225, 234, 0.4892331933) 0%, rgba(26, 66, 71, 0.4780287115) 100%) !important;
 }
-body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).energy, body[data-page=dashboard] .eqLogic-widget.energy {
+body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).energy, body[data-page=dashboard] #div_displayObject .eqLogic-widget.energy {
   background: #22c1c3 !important;
   background: linear-gradient(138deg, rgba(34, 193, 195, 0.4948354342) 0%, rgba(251, 215, 134, 0.5256477591) 48%, rgba(247, 121, 125, 0.5172443978) 100%) !important;
 }
