@@ -95,6 +95,12 @@ body[data-page='dashboard']{
     font-weight: 500;
   }
 
+  .eqLogic-widget {
+    .cmd.refresh {
+      margin-top: 3px !important;
+    }
+  }
+
   .cmdStats span{
     margin: 2px;
   }

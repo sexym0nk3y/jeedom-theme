@@ -2,6 +2,7 @@
   --cat-energy-color: transparent;
   --cat-multimedia-color: transparent;
   --cat-security-color: transparent;
+  --cat-opening-color: transparent;
   --cat-light-color: transparent;
   --cat-heating-color: transparent;
   --cat-automatism-color: transparent;
@@ -17,8 +18,8 @@
 }
 
 body[data-page=dashboard] {
-  background: #f7caa6;
-  background: linear-gradient(118deg, #f7caa6 0%, #cc9999 40%, rebeccapurple 100%);
+  background: rgb(247, 202, 166);
+  background: linear-gradient(118deg, rgb(247, 202, 166) 0%, rgb(204, 153, 153) 40%, rgb(102, 51, 153) 100%);
 }
 body[data-page=dashboard] .navbar {
   border-bottom: none !important;
@@ -77,6 +78,9 @@ body[data-page=dashboard] .scenario-widget .widget-name {
   font-size: 13px !important;
   font-weight: 500;
 }
+body[data-page=dashboard] .eqLogic-widget .cmd.refresh {
+  margin-top: 3px !important;
+}
 body[data-page=dashboard] .cmdStats span {
   margin: 2px;
 }
@@ -84,22 +88,22 @@ body[data-page=dashboard] #div_displayObject .div_object .objectDashLegend {
   background-color: transparent !important;
 }
 body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12), body[data-page=dashboard] #div_displayObject .eqLogic-widget {
-  background: #465efb;
+  background: rgb(70, 94, 251);
   background: linear-gradient(138deg, rgba(194, 255, 216, 0.4976365546) 0%, rgba(70, 94, 251, 0.4948354342) 100%);
 }
 body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).security, body[data-page=dashboard] #div_displayObject .eqLogic-widget.security {
-  background: #ff9d6c !important;
+  background: rgb(255, 157, 108) !important;
   background: linear-gradient(114deg, rgba(240, 95, 87, 0.5228466387) 0%, rgba(54, 9, 64, 0.4696253501) 100%) !important;
 }
 body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).heating, body[data-page=dashboard] #div_displayObject .eqLogic-widget.heating {
-  background: #f0ff00 !important;
+  background: rgb(240, 255, 0) !important;
   background: linear-gradient(114deg, rgba(240, 255, 0, 0.4948354342) 0%, rgba(88, 207, 251, 0.4528186275) 100%) !important;
 }
 body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).multimedia, body[data-page=dashboard] #div_displayObject .eqLogic-widget.multimedia {
-  background: #69e1ea !important;
+  background: rgb(105, 225, 234) !important;
   background: linear-gradient(114deg, rgba(105, 225, 234, 0.4892331933) 0%, rgba(26, 66, 71, 0.4780287115) 100%) !important;
 }
 body[data-page=dashboard] #div_displayObject .eqLogic:not(.col-xs-12).energy, body[data-page=dashboard] #div_displayObject .eqLogic-widget.energy {
-  background: #22c1c3 !important;
+  background: rgb(34, 193, 195) !important;
   background: linear-gradient(138deg, rgba(34, 193, 195, 0.4948354342) 0%, rgba(251, 215, 134, 0.5256477591) 48%, rgba(247, 121, 125, 0.5172443978) 100%) !important;
 }
